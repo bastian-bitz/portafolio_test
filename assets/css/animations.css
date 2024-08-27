@@ -1,0 +1,163 @@
+@keyframes Entrada{
+    from{
+        transform: translateY(-200px);
+    }
+    to{
+        transform: translateY(0);
+    }
+}
+@keyframes Salida{
+    from{
+        transform: translateY(0);
+    }
+    to{
+        transform: translateY(1000px);
+    }
+}
+@keyframes Fadein {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+@keyframes fondo {
+    from {
+        transform: translateY(200px);
+    }
+    to {
+        transform: translateY(0);
+    }
+}
+
+@keyframes moveDownAndDisappear {
+    0% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(100px);
+        opacity: 0;
+    }
+}
+@keyframes moveUpDown {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-15px);
+    }
+}
+@keyframes moveUpDown-sm {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+@media (min-width: 769px) {
+    .dark-mode .fondo1, .dark-mode .fondo2, .dark-mode .fondo3 {
+        animation: moveDownAndDisappear 1s forwards;
+    }
+    .fondo1 {
+        animation: 
+            fondo 0.5s ease-in-out,
+            moveUpDown 2s ease-in-out 0.5s infinite;
+    }
+    
+    .fondo2 {
+        animation: 
+            fondo 0.5s ease-in-out,
+            moveUpDown 2s ease-in-out 0.7s infinite;
+    }
+    
+    .fondo3 {
+        animation: 
+            fondo 0.5s ease-in-out,
+            moveUpDown 2s ease-in-out 1.2s infinite;
+    }
+    .fondo1_n {
+        animation: 
+            fondo 0.5s ease-in-out,
+            moveUpDown 2s ease-in-out 0.5s infinite;
+    }
+    
+    .fondo2_n {
+        animation: 
+            fondo 0.5s ease-in-out,
+            moveUpDown 2s ease-in-out 0.9s infinite;
+    }
+    
+    .fondo3_n {
+        animation: 
+            fondo 0.5s ease-in-out,
+            moveUpDown 2s ease-in-out 1.5s infinite;
+    }
+    .anim_arriba_abajo{
+        animation-name: Entrada;
+        animation-duration: 0.5s;
+        animation-timing-function: ease-out;
+    
+    }
+    .fadein{
+        animation-name: Fadein;
+        animation-duration: 1s;
+        animation-timing-function: ease-out;
+    }
+} 
+
+@media (max-width:769px) {
+    .dark-mode .fondo1, .dark-mode .fondo2, .dark-mode .fondo3 {
+        animation: moveDownAndDisappear 1s forwards;
+    }
+    .fondo1 {
+        animation: 
+            fondo 0.5s ease-in-out,
+            moveUpDown-sm 2s ease-in-out 0.5s infinite;
+    }
+    
+    .fondo2 {
+        animation: 
+            fondo 0.5s ease-in-out,
+            moveUpDown-sm 2s ease-in-out 0.7s infinite;
+    }
+    
+    .fondo3 {
+        animation: 
+            fondo 0.5s ease-in-out,
+            moveUpDown-sm 2s ease-in-out 1.2s infinite;
+    }
+    .fondo1_n {
+        animation: 
+            fondo 0.5s ease-in-out,
+            moveUpDown-sm 2s ease-in-out 0.5s infinite;
+    }
+    
+    .fondo2_n {
+        animation: 
+            fondo 0.5s ease-in-out,
+            moveUpDown-sm 2s ease-in-out 0.9s infinite;
+    }
+    
+    .fondo3_n {
+        animation: 
+            fondo 0.5s ease-in-out,
+            moveUpDown-sm 2s ease-in-out 1.5s infinite;
+    }
+    .anim_arriba_abajo{
+        animation-name: Entrada;
+        animation-duration: 0.5s;
+        animation-timing-function: ease-out;
+    
+    }
+    .fadein{
+        animation-name: Fadein;
+        animation-duration: 1s;
+        animation-timing-function: ease-out;
+    }
+ 
+}

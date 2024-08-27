@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/animations.css">
+    <title>Portafolio</title>
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+        <div class="container-fluid d-flex justify-content-between">
+            <button id="btn-home" class="btn"><i class="bi bi-house"></i></button>
+            <a id="btn-aboutme" href="sobre_mi.html" class="mx-auto">Sobre mi</a>
+            <a id="btn-portafolio" href="portafolio.html" class="mx-auto">Mis Proyectos</a>
+            <a id="btn-contacto" href="contacto.html" class="mx-auto">Contactame</a>
+            <button id="dark-mode-toggle" class="btn"></button>
+        </div>
+    </nav>
+</header>
+    <div class="container anim_arriba_abajo" id="titulo">
+        <h1 class="text-center display-1">Bastián Sáez</h1>
+    </div>
+    <div class="container fadein">
+      <div class="card mx-auto carta">
+        <div class="row">
+          <div class="col-md-4 col-xs-10 col-lg-5" id="portada">
+            <img src="assets/img/images.png" class="img-fluid rounded-start" id="img_portada">
+          </div>
+          <div class="col-md-8 col-xs-2 col-lg-7">
+            <div class="card-body">
+              <p class="card-text" id="texto_resumen" >Soy un apasionado desarrollador web full stack con experiencia en la creación de soluciones innovadoras y funcionales. Es esta página, podrás expolorar mis proyectos más...</p>
+              <p class="card-text" style="display: none;" id="texto_oculto">Soy un apasionado desarrollador web full stack con experiencia en la creación de soluciones innovadoras y funcionales. En esta página, podrás explorar mis proyectos más destacados, donde he aplicado una variedad de tecnologías y técnicas para resolver desafíos únicos. Además, encontrarás una sección donde comparto un poco sobre mi trayectoria, habilidades y la pasión que tengo por el desarrollo web.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="d-flex justify-content-center align-items-center">
+        <div class="card" style="width: 18rem; display: none;" id="card_sm">
+        <img src="assets/img/images.png" class="card-img-top">
+        <div class="card-body">
+          <p class="card-text">Soy un apasionado desarrollador web full stack con experiencia en la creación de soluciones innovadoras y funcionales. En esta página, podrás explorar mis proyectos más destacados, donde he aplicado una variedad de tecnologías y técnicas para resolver desafíos únicos. Además, encontrarás una sección donde comparto un poco sobre mi trayectoria, habilidades y la pasión que tengo por el desarrollo web.</p>
+        </div>
+      </div>
+    </div>
+    <div id="olas">
+      <div class="layer1 fondo1"></div>
+      <div class="layer2 fondo2"></div>
+      <div class="layer3 fondo3"></div>
+  
+    </div>
+    <div id="olas_n" style="display: none;">
+      <div class="layer1_n fondo1_n"></div>
+      <div class="layer2_n fondo2_n"></div>
+      <div class="layer3_n fondo3_n"></div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
